@@ -17,8 +17,8 @@ require('dotenv').config();
 const app = express();
 
 //security and cors policy
-app.use(cors({credentials: true, origin: `${process.env.ALLOWEDORIGIN}`, exposedHeaders:['Authorization']}));
-
+//app.use(cors({credentials: true, origin: `${process.env.ALLOWEDORIGIN}`, exposedHeaders:['Authorization']}));
+app.use(cors({credentials: true, origin: "http://localhost:3000", exposedHeaders:['Authorization']}));
 //Init BodyParser
 app.use(bodyParser.json({ 
     limit: '50mb'

@@ -10,7 +10,7 @@ exports.generateToken = (name, email, _id) => {
         email: email,
         name: name
     },jwtsecret, 
-    { expiresIn: '25mins' },
+    { expiresIn: '1mins' },
     { algorithm: 'HS256'} 
     );  
 
