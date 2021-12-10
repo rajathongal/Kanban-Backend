@@ -9,7 +9,7 @@ mongoose.Promise = global.Promise;
 //connection logic
 if (process.env.NODE_ENV === "production") {
   
-    connectionString =  "mongodb+srv://ardentrascal:qDj4YQtAWGL3SgWV@cluster0.kb7jo.mongodb.net/kanban?retryWrites=true&w=majority" ;
+    connectionString =  "" ;
 
   } else if (process.env.NODE_ENV === "development") {
 
@@ -17,7 +17,7 @@ if (process.env.NODE_ENV === "production") {
 
   } else {
 
-    connectionString = "mongodb+srv://ardentrascal:qDj4YQtAWGL3SgWV@cluster0.kb7jo.mongodb.net/kanban?retryWrites=true&w=majority";
+    connectionString = "";
   }
 
   const connectDB = async () => {
